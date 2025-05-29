@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light" style="color-scheme: light;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVDC Fundamentals</title>
+    <link rel="stylesheet" href="CSS/slide1.css">
+</head>
+<body>
+    <div class="header">
+        <div class="slide">
+         <h1>Basics of HVDC and Converter operation</h1>
+           
+        </div>
+        <ul class="text">
+            <p> <p>
+              <em class="bold">High voltage direct current (HVDC)</em> is a highly efficient alternative for transmitting bulk
+               electricity over a long distance. Also, with its high controllability and flexibility, HVDC has
+                been considered as the key enabler in the future energy system based on renewables</p>
+                The Line Commutated Converter (LCC) and Voltage Source Converter (VSC) are two
+               technologies that are being widely used in high voltage direct current (HVDC) power
+               transmission. The hybrid connection of LCC and VSC provides a promising solution of HVDC
+               that combines the advantages of both converter technologies.
+            </p>
+            <div class="forign">
+                <!-- Left Panel: Subtitles List -->
+    <div class="left-panel" id="subtitlesList">
+        <div class="subtitle-item" onclick="showContent(0)" data-target="content0">
+            <h3>Advantage of HVDC over HVAC system</h3>
+            <p>Merits of DC rather than AC</p>
+        </div>
+        <div class="subtitle-item" onclick="showContent(1)" data-target="content1">
+            <h3>Types of HVDC links & Operating modes</h3>
+            <p>Monopolar, Bipolar and Homopolar</p>
+        </div>
+        <div class="subtitle-item" onclick="showContent(2)" data-target="content2">
+            <h3>Conerter types LCC, IGBT & Hybrid</h3>
+            <p>Compartion of Converter technologies</p>
+        </div>
+        <div class="subtitle-item" onclick="showContent(3)" data-target="content3">
+            <h3>System configuration and Operation</h3>
+            <br>
+        </div class="subtitle-item" onclick="showContent(4)" data-target="content4">
+        <button class="more" onclick="location.href='index.html'">Back to Home</button>
+    </div>
+
+    <!-- Right Panel: Content Display -->
+    <div class="right-panel" id="contentDisplay">
+        <div class="content-display" id="content0">
+            <h2>Why HVDC rather than HVAC?</h2>
+            <p class="text">HVDC transmission offers several key advantages over traditional AC (Alternating Current) systems, particularly for:-
+           <ol>
+            <h4 class="h4">1. Lower power losses(Reduced transmission line losses)</h4>
+            <ul>
+                <li>DC has no power losses(no capacitive/inductive losses).</li>
+                <li>Lower conductor losses (only resistive losses, no skin effect).</li>
+                <li>More efficient for long-distance transmission (typically >500 km overhead or >50 km underground/submarine).</li>
+                <li>Example: Ethiopia-Kenya 500KV, 2000MW HVDC link´s transmission line length is 1060Km. So it is feasible economically.</li>
+            </ul>
+            <h4 class="h4">2. No Synchronization Required (Asynchronous Grid Interconnection)</h4>
+            <ul>
+                <li>AC systems must be synchronized in frequency and phase, but HVDC can connect grids with different frequencies (e.g., 50 Hz and 60 Hz).</li>
+                <li>Useful for interconnecting different power systems (e.g., Europe’s 50 Hz with North America’s 60 Hz).</li>
+            </ul>
+            <h4 class="h4">3. Higher Power Transmission Capacity</h4>
+            <ul>
+                <li>Same conductor size can carry more power in DC than AC.</li>
+                <li>No charging current in cables (AC cables suffer from capacitive losses).</li>
+            </ul>
+            <h4 class="h4">5. Better Control & Stability</h4>
+            <ul>
+                <li>Fast power flow control (independent of voltage and frequency).</li>
+                <li>Prevents cascading failures (HVDC can block fault propagation between grids).</li>
+                <li>Black-start capability (can help restore power after a blackout) by VSC based converters.</li>
+                <li>Increased stability margin of both AC networks</li>
+                <li>Intelligent control of reactive power</li>
+            </ul>
+            <h4 class="h4">6. Lower Cost for Long Distances & Underground/Submarine Cables</h4>
+            <ul>
+                <li>Fewer conductors needed (only 2 for bipolar HVDC vs. 3 for AC).</li>
+                <li>No need for reactive compensation (AC requires shunt reactors for long cables).</li>
+                <li>Reduced right-of-way requirements (narrower towers for overhead lines).</li>
+            </ul>
+            <h4 class="h4">7. Suitable for Renewable Energy Integration</h4>
+            <ul>
+                <li>Offshore wind farms often use HVDC to transmit power to shore efficiently.</li>
+                <li>Solar and wind power (which are DC or variable-frequency) integrate well with HVDC.</li>
+            </ul>
+        </ol>
+        </div>
+
+        <div class="content-display" id="content1">
+            <h2>Types of HVDC Circuit topologies and Links</h2>
+            <p>High Voltage Direct Current (HVDC) transmission systems are categorized into three main types based on their configuration and purpose. Each type has unique characteristics suited for specific power transmission scenarios.</p>
+            <div style="background-color: #e8f5e9; padding: 5px; border-radius: 5px;">
+                <ol>
+                  <li style="font-weight: bold;font-size: 14pt;">Monopolar HVDC link</li>
+                  <p style="font-weight: bold;">Configuration</p>
+                  <ul>
+                    <li>Single conductor(usually negative polarity) with ground/sea return</li>
+                    <li>Uses one high-voltage conductor at each end</li>
+                  </ul>
+                  <img src="image/mono1.PNG" style="width: 320px;margin-left: 20px;height: 220px;";alt="monopolar metalic return">
+                  <img src="image/mono2.PNG" style="width: 300px;height: 220px;";alt="monopolar ground/sea return">
+                  <p style="font-weight: bold;">Advantages</p>
+                  <ul>
+                    <li>Lower cost(only one conductor required)</li>
+                    <li>Simpler design and maintenance</li>
+                    <li>efficient for moderate power transfer</li>
+                  </ul>
+                  <p style="font-weight: bold;">Disadvantage</p>
+                  <ul>
+                    <li>Requires reliable ground/sea return</li>
+                    <li>Higher earth current can cause corssion in buried metalic structure</li>
+                  </ul>
+                  <p style="font-weight: bold;">Application</p>
+                  <ul>
+                    <li>Submarine cable connections (e.g., NorNed between Norway and the Netherlands).</li>
+                    <li>Medium-power, point-to-point bulk transmission.</li>
+                  </ul>
+                  <li style="font-weight: bold;font-size: 14pt;">Bipolar HVDC Link</li>
+                  <p style="font-weight: bold;">Configuration</p>
+                  <ul>
+                    <li>Two conductors (positive and negative poles) with ground return as backup.</li>
+                    <li>Can operate in monopolar mode if one pole fails (redundancy).</li>
+                  </ul>
+                  <img src="image/bi2.PNG" style="width: 300px;height: 220px; margin-left: 20px;";alt="monopolar ground/sea return">
+                  <img src="image/bi3.PNG" style="width: 300px;height: 220px;";alt="monopolar ground/sea return">
+                  <img src="image/bi1.PNG" style="width: 600px;margin-left: 20px;height: 300px;";alt="monopolar metalic return">
+                  <p style="font-weight: bold;">Advantages</p>
+                  <ul>
+                    <li>Higher power transfer capacity (±500 kV to ±1100 kV).</li>
+                    <li>Redundant operation (if one pole fails, system continues at half capacity).</li>
+                    <li>Lower ground current (reduced corrosion risk).</li>
+                  </ul>
+                  <p style="font-weight: bold;">Disadvantage</p>
+                  <ul>
+                    <li>More expensive than monopolar (double the converters and conductors).</li>
+                    <li>Complex control for balancing voltages.</li>
+                  </ul>
+                  <p style="font-weight: bold;">Application</p>
+                  <ul>
+                    <li>Long-distance bulk transmission (e.g., China’s ±800 kV, 12 GW projects).</li>
+                    <li>Cross-border interconnections (e.g., India’s Raigarh-Pugalur link).</li>
+                  </ul>
+                  <li style="font-weight: bold;font-size: 14pt;">Homopolar HVDC Link</li>
+                  <p style="font-weight: bold;">Configuration</p>
+                  <ul>
+                    <li>Two conductors of the same polarity (usually negative) with ground return.</li>
+                    <li>Rarely used today (mostly replaced by bipolar systems).</li>
+                  </ul>
+                  <p style="font-weight: bold;">Advantages</p>
+                  <ul>
+                    <li>Lower insulation costs (same polarity).</li>
+                  </ul>
+                  <p style="font-weight: bold;">Disadvantage</p>
+                  <ul>
+                    <li>Significant ground currents (higher corrosion risk).</li>
+                    <li>Limited flexibility compared to bipolar.</li>
+                  </ul>
+                  <p style="font-weight: bold;">Application</p>
+                  <ul>
+                    <li>Older HVDC projects (e.g., Pacific Intertie in the USA, 1970s).</li>
+                  </ul>
+                  <ol type="A">
+                   <p style="font-weight: bold;font-size: 15pt;">Special Configurations</p>
+                  <li style="font-weight: bold;">Back to Back Configuration(No DC line)</li>
+                  <ul>
+                    <li>AC-DC-AC conversion in the same station.</li>
+                    <li>Used for connecting asynchronous grids (e.g., 50 Hz ↔ 60 Hz).</li>
+                    <li>Example:- India’s Vindhyachal BtB link (interconnects North and West grids).</li>
+                  </ul>
+                  <li style="font-weight: bold;">Multi-Terminal HVDC (MTDC)</li>
+                  <ul>
+                    <p>Three or more converter stations connected to a single DC grid. Types are:-</p>
+                    <li>Series MTDC (rare, used in older systems).</li>
+                    <li>Parallel MTDC (modern VSC-based DC grids).</li>
+                    <li>Example:- Nan’ao MTDC project (China) – integrates offshore wind farms.</li>
+                  </ul>
+                    </ol>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content-display" id="content2">
+            <h2>Line commutated Vs Voltage source converters</h2>
+            <p>High Voltage Direct Current (HVDC) transmission systems are used for efficient long-distance power transmission, interconnection of asynchronous grids, and submarine cable links. There are primarily two types of HVDC systems, each with its own advantages:</p>
+            <div style="display: flex; flex-wrap:wrap;">
+                <div>
+                    <ol type="A">
+                    <li style="font-weight: bold;">Line Commutated Converter (LCC)-HVDC (Classic HVDC)</li>
+                    
+                        <p>LCC-HVDC relies on the AC grid for commutation, meaning it needs a stable AC voltage to switch off (commutate) the thyristors. Here’s a breakdown of how it interacts with the AC system.</p>
+                        <ol>
+                            <li style="font-weight: bold;">Commutation Process (AC Grid Dependency)</li>
+                    <ul>
+                        <li>Thyristors in LCC-HVDC only turn ON when forward-biased and receive a gate pulse.</li>
+                        <li>They turn OFF (commutate) only when the AC voltage reverses polarity, forcing current to zero.</li>
+                        <li>If the AC grid is weak (low short-circuit ratio, SCR &lt; 2), commutation failure can occur.</li>
+                        <li>Inverters have a high probability of facing commutation failure problem than rectifier.</li>
+                    <p style="font-weight: bold;"> Commutation failure causes</p>
+                    <li>AC voltage dips (e.g., faults, grid disturbances).</li>
+                    <li>Phase-angle shifts (sudden load changes).</li>
+                    <li>Harmonics & reactive power issues.</li> 
+                    </ul>
+                        <li style="font-weight: bold;"> Reactive Power consumption</li>
+                        <ul>
+                        <li>LCC-HVDC consumes reactive power (~50-60% of active power transmitted).</li>
+                        <p style="font-weight: bold;">Why ?</p>
+                        <li>Current lags voltage due to thyristor switching delays (firing angle control).</li>
+                        <li>The converter acts like an inductive load.</li>
+                        <p style="font-weight: bold;">Solution</p>
+                        <li>Capacitor banks (fixed or switched).</li>
+                        <li>Shunt compensators like; Static VAR Compensators (SVCs) or STATCOMs (dynamic compensation).</li>
+                        </ul>
+                        <li style="font-weight: bold;">Harmonics & Filtering</li>
+                        <ul>
+                            <li>LCC-HVDC generates harmonic currents (6-pulse: 5th, 7th, 11th, 13th; 12-pulse: reduced harmonics).</li>
+                            <li>AC filters are required to block harmonics from polluting the grid.</li>
+                            <li><em style="font-weight: bold;font-style:italic ;">Ethiopia-Kenya LCC-HVDC</em> has installed 3rd, 5th, 11th, 12th, 24th and 36th harmonic filter orders.</li>
+                        </ul>
+                        <li style="font-weight: bold;">Grid Synchronization</li>
+                        <ul>
+                            <li>LCC-HVDC needs a stable AC voltage reference (frequency & phase angle).</li>
+                            <li>Phase-Locked Loop (PLL) monitors grid voltage to synchronize firing pulses.</li>
+                            <li>If the AC grid collapses, LCC-HVDC cannot restart without external support (no black-start capability).</li>
+                        </ul>
+                        <li style="font-weight: bold;">Applications Where LCC Works Best</li>
+                        <p> &#9989; AC grids (high short-circuit ratio, SCR > 3).</p>
+                        <p>&#9989;Long-distance bulk power transmission (lower losses than VSC-HVDC).</p>
+                        <p>&#9989;Stable interconnections (e.g., China’s ±800kV, 12 GW projects).</p>
+                       <p> &#x274C; Weak AC grids (risk of commutation failures).</p>
+                       <p> &#x274C; Offshore wind farms (unless paired with STATCOMs)</p>
+                    </ol>
+                    <li style="font-weight: bold;">Voltage Source Converter (VSC)-HVDC (HVDC Light/Flexible)</li>
+                    <p>VSC-HVDC (Voltage Source Converter-based HVDC) uses self-commutated power electronics (IGBTs or IGCTs) to convert AC to DC and vice versa. Unlike LCC-HVDC, it does not rely on the AC grid for commutation, making it more flexible and suitable for weak grids, offshore wind farms, and black-start applications.</p>
+                    
+                     <ul>
+                        <p style="font-weight: bold;">Advantage</p>
+                      <li>Black Start Capability: Can operate without an external AC source.</li>
+                      <li>Independent Control of P & Q: Active (P) and reactive (Q) power can be controlled separately.</li>
+                       <li>Multiterminal & Grid Expansion: Easier to build multi-terminal HVDC networks.</li>
+                       <li>Compact & Modular: Requires less space (suitable for offshore wind farms).</li>
+                       <li>No Need for Reactive Power Compensation: Generates its own reactive power.</li>
+                        <p style="font-weight: bold;">Disadvantages:</p>
+                        <li>Lower power capacity compared to LCC</li>
+                        <li>Higher losses and costs for high-voltage applications.</li>
+                     </ul>
+                     <li style="font-weight: bold;">Hybrid HVDC (LCC + VSC)</li>
+                     <p>Hybrid HVDC combines Line-Commutated Converters (LCC) and Voltage Source Converters (VSC) to leverage the strengths of both technologies while mitigating their weaknesses. This configuration is increasingly used in modern HVDC projects where high power capacity, grid stability, and flexibility are required.</p>
+                     <ul>
+                        <li>Long-distance bulk power transmission (LCC side: efficient rectification).</li>
+                        <li>Weak/receiving grid (VSC side: stabilizes grid, prevents commutation failures).</li>
+                        <li>China’s Zhangbei HVDC (±500 kV, 3 GW) uses LCC on the sending side and VSC on the receiving end.</li>
+                     </ul>
+                    </ol>
+                    <br>
+            </div>
+             <div class="image-gallery">
+        <!-- First Image -->
+        <img class="zoomable-img" src="image/lcc.PNG" alt="LCC-HVDC SLD image">
+        
+        <!-- Second Image -->
+        <img class="zoomable-img" src="image/igbt.PNG" alt="VSC-HVDC SLD image">
+        <p style="text-align: left;">LCC-HVDC SLD</p> <br>        <p style="text-align: right;">VSC-HVDC SLD </p>
+    </div>
+    
+    <!-- Modal (reusable for all images) -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="zoomedImage">
+                </div>
+            </div>   
+        </div>
+    
+       <div class="content-display" id="content3">
+            <h2>System Configuration and Operation</h2>
+            <p>Bipolar HVDC system power flow animation taken from Ethiopia-Kenya HVDC link</p>
+            <video width="700"height="450" controls>
+              <source src="Video/animat.mp4" type="video/mp4">
+            </video>
+            <ol>
+                <li>Review of key concepts</li>
+                <li>Practical applications</li>
+                <li>Next steps for learning</li>
+            </ol>
+            <button style="padding: 10px 20px; background-color: #2196f3; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                Download Summary
+            </button>
+        </div>
+    </div>
+        
+     </ul>
+        
+    </div>
+     <script src="JS/slide1.js"></script>
+</body>
+</html>

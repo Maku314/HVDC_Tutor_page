@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVDC/FACTS document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>HVDC & FACTS Training Platform</h1>
+        <p>Interactive learning for Advanced power system technologies</p>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 34</div>
+  <img src="image/EHVDC.jpg" style="width:100%">
+  <div class="text">HVDC site</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image/ETHKE TL.jpg" style="width:100%">
+  <div class="text">HVDC TL</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/site.jpg" style="width:100%">
+  <div class="text">site overview</div>
+</div>
+<!--<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="image/team.jpg" style="width:100%">
+  <div class="text">Eng.Team</div>//
+</div>-->
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+    </header>
+    
+    <div class="training-modules">
+        <div class="module-card theory">
+            <h2>HVDC Fundamentals</h2>
+            <p>Learn the basic principles of High Voltage Direct Current transmission systems.</p>
+            <ul>
+                <li>Advantage of HVDC over HVAC system</li>
+                <li>Converter types and their merits</li>
+                <li>Thyristor vs. IGBT</li>
+                <li>System configurations</li>
+            </ul>
+            <button onclick="location.href='slide1.html'">Start Learning</button>
+          
+        </div>
+        <div class="module-card CandP">
+            <h2>HVDC Control & protection</h2>
+            <p>Learn the control and protection of LCC type High Voltage Direct Current transmission systems.</p>
+            <ul>
+                <li>Pole and DC station control</li>
+                <li>AC station control</li>
+                <li>DC system protection</li>
+                <li>AC system protection</li>
+            </ul>
+             <button onclick="location.href='slide2.html'">Start Learning</button>
+        </div>
+        <div class="module-card Auto">
+            <h2>HVDC Automation & Communication</h2>
+            <p>Learn the critical things for LCC type High Voltage Direct Current transmission systems.</p>
+            <ul>
+                <li>Automation Via IEC61850 protocol</li>
+                <li>Automation Via siemens PLCs</li>
+                <li>HVDC link Communication</li>
+                <li>SCADA system</li>
+            </ul>
+             <button onclick="location.href='slide.html'">Start Learning</button>
+        </div>
+       
+        <div class="module-card FACTS">
+            <h2>FACTS in HVDC and grid</h2>
+            <p>Learn the effect of FACT devices for HVDC and general grid stability.</p>
+            <ul>
+                <li>Types of FACTS device</li>
+                <li>Advantage of FACTS for HVDC</li>
+                <li>Advantage of FACTS for grid stability</li>
+                <li>Disadvantage of FACTS in the system</li>
+            </ul>
+            <button onclick="location.href='slide.html'">Start Learning</button>
+        </div>
+        <button class="ref">For this topic our refernce is <em class="target">Ethio-Kenya 500KV, 2000MW HVDC link</em> <span><span><a href="https://www.afdb.org/en/success-stories/east-africa-ethiopia-kenya-electricity-highway-shaping-regional-connectivity-support-african-development-bank-76143" target="_blank"><br>Visit ETHKE HVDC Video</br></a></span></span> <b>presented by African development bank group</b></button> 
+        <div class="module-card quiz">
+            <h2>Knowledge Check</h2>
+            <p>Test your understanding with interactive quizzes.</p>
+            <div id="quiz-sample">
+                <p><strong>Q1:</strong> What is the main advantage of HVDC over HVAC for long distances?</p>
+                <button class="quiz-option">A. Lower cost</button>
+                <button class="quiz-option">B. Reduced losses</button>
+                <button class="quiz-option">C. Smaller towers</button>
+           
+                <p><strong>Q2:</strong> minimum power flow operation in one pole of Ethiopia-Kenya HVDC link is?</p>
+                <button class="quiz-option">A. 10% of nominal</button>
+                <button class="quiz-option">B. 5% of nominal</button>
+                <button class="quiz-option">C. it depends</button>
+                <button class="quiz-option">D. none</button>
+         </div>
+         <br>
+         <div class="more">
+            <button onclick="location.href='slide.html'">See more</button>
+         </div>
+         
+        </div>
+      
+    <div>
+    <button class="Author"><u>Author </u>
+        <p>Engineer <br>Mekonnen Kassie</br></p>
+       <a href="Bio.html"target="_blank">About me</a>
+    </button>
+</div>
+        
+    <br>
+   
+ <div>
+    <button class="emergency-btn" onclick="safetyProcedure()">
+        <i class="fas fa-exclamation-triangle"></i> Emergency Stop Drill
+    </button>
+</div>
+
+    <script src="JS/code.js"></script>
+    
+</body>
+</html>

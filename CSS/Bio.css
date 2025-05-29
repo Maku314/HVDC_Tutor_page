@@ -1,0 +1,100 @@
+body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            background-color: lab(89.21% -1.31 -1.57);
+
+                
+        }
+        
+        header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 0;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3498db;
+            backdrop-filter: brightness(150%);
+        }
+        
+        .header-text {
+            flex: 1;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+        
+        section {
+            margin: 25px 0;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        .job, .education {
+            margin-bottom: 20px;
+        }
+        
+        .job-title, .degree {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .company, .university {
+            color: #16a085;
+            font-style: italic;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            background-color: #e0f7fa;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .profile-photo {
+                margin-bottom: 15px;
+            }
+        }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVDC Control & protection</title>
+     <link rel="stylesheet" href="CSS/slide2.css">
+</head>
+<body class="body">
+    <div class="header">
+        <div class="slide2">
+            <h1>HVDC Control and protection</h1>
+        </div>
+          <!-- Sidebar Navigation -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>HVDC Control</h2>
+        </div>
+        
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>Introduction</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('overview')">Overview</div>
+            <div class="subtopic" onclick="showContent('importance')">Importance</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>Pole Control system</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('relays')">Relays</div>
+            <div class="subtopic" onclick="showContent('circuit-breakers')">Circuit Breakers</div>
+            <div class="subtopic" onclick="showContent('fuses')">Fuses</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>DC Station Control</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('overcurrent')">Overcurrent Protection</div>
+            <div class="subtopic" onclick="showContent('differential')">Differential Protection</div>
+            <div class="subtopic" onclick="showContent('distance')">Distance Protection</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>AC Station Control</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('symmetrical')">Symmetrical Faults</div>
+            <div class="subtopic" onclick="showContent('unsymmetrical')">Unsymmetrical Faults</div>
+        </div>
+         <div class="sidebar-header">
+            <h2>HVDC Protection</h2>
+        </div>
+        
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>Introduction</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('overview')">Overview</div>
+            <div class="subtopic" onclick="showContent('importance')">Importance</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>AC Side Protection</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('relays')">Relays</div>
+            <div class="subtopic" onclick="showContent('circuit-breakers')">Circuit Breakers</div>
+            <div class="subtopic" onclick="showContent('fuses')">Fuses</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>DC Protection</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('overcurrent')">Overcurrent Protection</div>
+            <div class="subtopic" onclick="showContent('differential')">Differential Protection</div>
+            <div class="subtopic" onclick="showContent('distance')">Distance Protection</div>
+        </div>
+
+        <div class="main-topic" onclick="toggleSubtopic(this)">
+            <span>DC Filter Protection</span>
+            <span class="arrow">▶</span>
+        </div>
+        <div class="subtopics">
+            <div class="subtopic" onclick="showContent('symmetrical')">Symmetrical Faults</div>
+            <div class="subtopic" onclick="showContent('unsymmetrical')">Unsymmetrical Faults</div>
+        </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content" id="content-area">
+        <h2 id="content-title">Welcome to Power System Protection</h2>
+        <p id="content-text">Select a topic from the sidebar to view its content.</p>
+    </div>
+
+    <script src="JS/slide2.js"></script>
+    </div>
+        
+</head>
+</html>
